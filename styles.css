@@ -206,7 +206,15 @@ h1, h2, h3, .brand, .job-title, .skill-card h3 {
 }
 .upload-pill:hover { background: var(--lavender); }
 
-.cat-peek { opacity: 0.9; }
+.cat-peek {
+  opacity: 0.9;
+  animation: catSway 4.5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+@keyframes catSway {
+  0%, 100% { transform: rotate(-2deg) translateY(0); }
+  50% { transform: rotate(2deg) translateY(-3px); }
+}
 
 .hero-right { display: flex; flex-direction: column; gap: 6px; }
 
