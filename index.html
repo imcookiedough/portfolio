@@ -17,20 +17,20 @@
   <div class="blob blob-3"></div>
 </div>
 
-<header class="topbar">
+<header class="topbar" id="topbar">
   <div class="brand">Raquel<span class="dot">.</span></div>
   <nav class="tabnav" id="tabnav">
-    <button class="tab active" data-panel="about">About</button>
-    <button class="tab" data-panel="experience">Experience</button>
-    <button class="tab" data-panel="skills">Skills</button>
-    <button class="tab" data-panel="interests">Beyond work</button>
+    <a class="tab active" href="#about" data-section="about">About</a>
+    <a class="tab" href="#experience" data-section="experience">Experience</a>
+    <a class="tab" href="#skills" data-section="skills">Skills</a>
+    <a class="tab" href="#interests" data-section="interests">Beyond work</a>
   </nav>
 </header>
 
 <main class="stage" id="stage">
 
-  <!-- ABOUT PANEL -->
-  <section class="panel active" id="panel-about" data-panel="about">
+  <!-- ABOUT -->
+  <section class="page-section" id="about">
     <div class="hero-card">
       <div class="hero-left">
         <div class="avatar-wrap">
@@ -46,28 +46,20 @@
         <div class="cat-peek" aria-hidden="true">
           <svg viewBox="0 0 120 100" width="92" height="76">
             <ellipse cx="60" cy="78" rx="46" ry="20" fill="#3C3489" opacity="0.08"/>
-            <!-- cream body/head base -->
             <path d="M28 70 Q24 30 40 18 L36 4 Q50 8 54 20 Q60 16 66 20 Q70 8 84 4 L80 18 Q96 30 92 70 Q92 86 60 86 Q28 86 28 70 Z" fill="#EDE2CE"/>
-            <!-- seal-brown ear points -->
             <path d="M36 4 L40 18 L29 23 Q30 12 36 4 Z" fill="#3A2A22"/>
             <path d="M84 4 L80 18 L91 23 Q90 12 84 4 Z" fill="#3A2A22"/>
-            <!-- seal mask around eyes/muzzle -->
             <path d="M40 22 Q60 14 80 22 Q86 34 80 44 Q72 52 60 52 Q48 52 40 44 Q34 34 40 22 Z" fill="#4A3528"/>
-            <!-- eyes: siamese blue -->
             <ellipse cx="48" cy="38" rx="5.5" ry="6.5" fill="#7FB8D9"/>
             <ellipse cx="72" cy="38" rx="5.5" ry="6.5" fill="#7FB8D9"/>
             <circle cx="48" cy="38" r="2.6" fill="#1A1A1A"/>
             <circle cx="72" cy="38" r="2.6" fill="#1A1A1A"/>
             <circle cx="49.5" cy="36.5" r="0.9" fill="white"/>
             <circle cx="73.5" cy="36.5" r="0.9" fill="white"/>
-            <!-- nose -->
             <path d="M57 46 L63 46 L60 50 Z" fill="#2B1F19"/>
-            <!-- mouth -->
             <path d="M60 50 Q55 54 48 52 M60 50 Q65 54 72 52" stroke="#3A2A22" stroke-width="1.2" fill="none"/>
-            <!-- seal points on legs (dark paws peeking at base) -->
             <path d="M40 80 Q40 70 44 64 Q48 70 47 80 Z" fill="#3A2A22" opacity="0.85"/>
             <path d="M80 80 Q80 70 76 64 Q72 70 73 80 Z" fill="#3A2A22" opacity="0.85"/>
-            <!-- whiskers -->
             <path d="M20 44 Q8 40 6 32 M20 50 Q6 50 4 44 M100 44 Q112 40 114 32 M100 50 Q114 50 116 44" stroke="#B4B2A9" stroke-width="1" fill="none"/>
           </svg>
         </div>
@@ -92,8 +84,8 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE PANEL -->
-  <section class="panel" id="panel-experience" data-panel="experience">
+  <!-- EXPERIENCE -->
+  <section class="page-section" id="experience">
     <h2 class="panel-title">Experience</h2>
     <p class="panel-sub">A path through customer experience, RevOps, and technical solutions — click a role to expand.</p>
 
@@ -139,12 +131,13 @@
         </div>
       </div>
 
-      <div class="job">
+      <div class="job job-group-start">
         <div class="timeline-rail">
           <span class="timeline-dot"></span>
           <span class="timeline-line"></span>
         </div>
         <div class="job-card">
+          <div class="job-group-label">JPMorgan Chase &amp; Co. — 2019 to 2024</div>
           <button class="job-head">
             <div class="job-head-text">
               <span class="job-title">VP, Client Solutions Architect Manager</span>
@@ -257,10 +250,10 @@
     </div>
   </section>
 
-  <!-- SKILLS PANEL -->
-  <section class="panel" id="panel-skills" data-panel="skills">
+  <!-- SKILLS -->
+  <section class="page-section" id="skills">
     <h2 class="panel-title">Skills</h2>
-    <p class="panel-sub">Tap a category to see what's inside.</p>
+    <p class="panel-sub">The tools of the trade.</p>
 
     <div class="skills-grid" id="skillsGrid">
 
@@ -315,8 +308,8 @@
     </div>
   </section>
 
-  <!-- INTERESTS PANEL -->
-  <section class="panel" id="panel-interests" data-panel="interests">
+  <!-- BEYOND WORK -->
+  <section class="page-section" id="interests">
     <h2 class="panel-title">Beyond work</h2>
     <p class="panel-sub">The other side of the desk.</p>
 

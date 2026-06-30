@@ -1,26 +1,42 @@
-// Tab navigation between panels
+// Smooth scroll nav with active-state highlighting
 const tabs = document.querySelectorAll('.tab');
-const panels = document.querySelectorAll('.panel');
+const sections = document.querySelectorAll('.page-section');
 
 tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = tab.dataset.panel;
-
-    tabs.forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
-
-    panels.forEach(p => {
-      if (p.dataset.panel === target) {
-        p.classList.add('active');
-      } else {
-        p.classList.remove('active');
-      }
-    });
-
-    // keep keyboard/scroll position sane
-    document.getElementById('stage').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  tab.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = tab.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   });
 });
+
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      tabs.forEach(t => {
+        t.classList.toggle('active', t.dataset.section === id);
+      });
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+sections.forEach(s => navObserver.observe(s));
+
+// Scroll-reveal for sections
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+sections.forEach(s => revealObserver.observe(s));
 
 // Experience accordion
 document.querySelectorAll('.job-head').forEach(head => {
@@ -28,7 +44,6 @@ document.querySelectorAll('.job-head').forEach(head => {
     const job = head.closest('.job');
     const wasOpen = job.classList.contains('open');
 
-    // close all others for a tidier feel
     document.querySelectorAll('.job.open').forEach(j => j.classList.remove('open'));
 
     if (!wasOpen) {
