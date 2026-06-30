@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raquel | Customer Experience &amp; Operations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-blobs" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<header class="topbar">
+  <div class="brand">Raquel<span class="dot">.</span></div>
+  <nav class="tabnav" id="tabnav">
+    <button class="tab active" data-panel="about">About</button>
+    <button class="tab" data-panel="experience">Experience</button>
+    <button class="tab" data-panel="skills">Skills</button>
+    <button class="tab" data-panel="interests">Beyond work</button>
+  </nav>
+</header>
+
+<main class="stage" id="stage">
+
+  <!-- ABOUT PANEL -->
+  <section class="panel active" id="panel-about" data-panel="about">
+    <div class="hero-card">
+      <div class="hero-left">
+        <div class="avatar-wrap">
+          <div class="avatar-placeholder" id="avatarSlot">
+            <span>R</span>
+          </div>
+          <label class="upload-pill" for="photoUpload">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            Add photo
+          </label>
+          <input type="file" id="photoUpload" accept="image/*" hidden>
+        </div>
+        <div class="cat-peek" aria-hidden="true">
+          <svg viewBox="0 0 120 100" width="92" height="76">
+            <ellipse cx="60" cy="78" rx="46" ry="20" fill="#3C3489" opacity="0.08"/>
+            <!-- cream body/head base -->
+            <path d="M28 70 Q24 30 40 18 L36 4 Q50 8 54 20 Q60 16 66 20 Q70 8 84 4 L80 18 Q96 30 92 70 Q92 86 60 86 Q28 86 28 70 Z" fill="#EDE2CE"/>
+            <!-- seal-brown ear points -->
+            <path d="M36 4 L40 18 L29 23 Q30 12 36 4 Z" fill="#3A2A22"/>
+            <path d="M84 4 L80 18 L91 23 Q90 12 84 4 Z" fill="#3A2A22"/>
+            <!-- seal mask around eyes/muzzle -->
+            <path d="M40 22 Q60 14 80 22 Q86 34 80 44 Q72 52 60 52 Q48 52 40 44 Q34 34 40 22 Z" fill="#4A3528"/>
+            <!-- eyes: siamese blue -->
+            <ellipse cx="48" cy="38" rx="5.5" ry="6.5" fill="#7FB8D9"/>
+            <ellipse cx="72" cy="38" rx="5.5" ry="6.5" fill="#7FB8D9"/>
+            <circle cx="48" cy="38" r="2.6" fill="#1A1A1A"/>
+            <circle cx="72" cy="38" r="2.6" fill="#1A1A1A"/>
+            <circle cx="49.5" cy="36.5" r="0.9" fill="white"/>
+            <circle cx="73.5" cy="36.5" r="0.9" fill="white"/>
+            <!-- nose -->
+            <path d="M57 46 L63 46 L60 50 Z" fill="#2B1F19"/>
+            <!-- mouth -->
+            <path d="M60 50 Q55 54 48 52 M60 50 Q65 54 72 52" stroke="#3A2A22" stroke-width="1.2" fill="none"/>
+            <!-- seal points on legs (dark paws peeking at base) -->
+            <path d="M40 80 Q40 70 44 64 Q48 70 47 80 Z" fill="#3A2A22" opacity="0.85"/>
+            <path d="M80 80 Q80 70 76 64 Q72 70 73 80 Z" fill="#3A2A22" opacity="0.85"/>
+            <!-- whiskers -->
+            <path d="M20 44 Q8 40 6 32 M20 50 Q6 50 4 44 M100 44 Q112 40 114 32 M100 50 Q114 50 116 44" stroke="#B4B2A9" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+      </div>
+      <div class="hero-right">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Raquel DeSantis</h1>
+        <p class="role">Customer Experience &amp; Operations Specialist</p>
+        <p class="tagline">Documentation, process improvement &amp; customer insights — I make the behind-the-scenes work feel effortless up front.</p>
+        <div class="meta-row">
+          <span class="meta-chip"><i class="dot-icon"></i>North Providence, RI</span>
+          <span class="meta-chip"><i class="dot-icon"></i>Spanish &amp; English fluent</span>
+          <span class="meta-chip"><i class="dot-icon"></i>Open to remote roles</span>
+        </div>
+        <p class="about-body">
+          I'm naturally curious about how things work, and I enjoy finding the small process fixes that make a big difference — clearer docs, smoother onboarding, fewer dropped balls between teams. My background spans customer support, technical onboarding, RevOps, and solutions architecture, always with an eye toward connecting customer feedback and operational data into something a team can actually act on.
+        </p>
+        <p class="about-body">
+          Outside of solving operational puzzles, I'm usually solving creative ones instead — sketching out a project, working through a strategy game, or making my Siamese cat's life unreasonably comfortable.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE PANEL -->
+  <section class="panel" id="panel-experience" data-panel="experience">
+    <h2 class="panel-title">Experience</h2>
+    <p class="panel-sub">A path through customer experience, RevOps, and technical solutions — click a role to expand.</p>
+
+    <div class="timeline" id="timeline">
+
+      <div class="job">
+        <div class="timeline-rail">
+          <span class="timeline-dot"></span>
+          <span class="timeline-line"></span>
+        </div>
+        <div class="job-card">
+          <button class="job-head">
+            <div class="job-head-text">
+              <span class="job-title">Financial Data Analyst</span>
+              <span class="job-co">Stripe</span>
+            </div>
+            <span class="job-date">Sep 2025 – Jun 2026</span>
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="job-body">
+            <p>North America — supported data analysis work within Stripe's operations function.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="timeline-rail">
+          <span class="timeline-dot"></span>
+          <span class="timeline-line"></span>
+        </div>
+        <div class="job-card">
+          <button class="job-head">
+            <div class="job-head-text">
+              <span class="job-title">Solution Integration Engineer</span>
+              <span class="job-co">Relocity, Inc.</span>
+            </div>
+            <span class="job-date">Jun 2024 – Jun 2025</span>
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="job-body">
+            <p>Supported onboarding and technical integration of relocation partners and suppliers, ensuring smooth API adoption and troubleshooting implementation issues. Worked cross-functionally with product, engineering, and design teams. Used Postman, Looker, and SQL to help launch international integrations and improve partner experience.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="timeline-rail">
+          <span class="timeline-dot"></span>
+          <span class="timeline-line"></span>
+        </div>
+        <div class="job-card">
+          <button class="job-head">
+            <div class="job-head-text">
+              <span class="job-title">VP, Client Solutions Architect Manager</span>
+              <span class="job-co">JPMorgan Chase &amp; Co.</span>
+            </div>
+            <span class="job-date">Jan 2024 – Jun 2024</span>
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="job-body">
+            <p>Supported merchant onboarding and enablement strategy through data analysis and cross-functional coordination across CX, product, and risk teams. Used SQL, BigQuery, and Looker to identify verification bottlenecks, troubleshoot API-related concerns, advise partners, and accelerate time to go-live. Delivered insights that improved KYC success rates and influenced partner engagement and revenue strategy. Sat within RevOps, with a focus on CX and strategic ops.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="timeline-rail">
+          <span class="timeline-dot"></span>
+          <span class="timeline-line"></span>
+        </div>
+        <div class="job-card">
+          <button class="job-head">
+            <div class="job-head-text">
+              <span class="job-title">Senior Client Solutions Architect</span>
+              <span class="job-co">JPMorgan Chase &amp; Co.</span>
+            </div>
+            <span class="job-date">Aug 2023 – Jan 2024</span>
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="job-body">
+            <p>Focused on partner implementations, merchant account analysis, and CX-focused enablement strategy. Created presentation decks and documentation to surface KYC issues, RAG statuses, and onboarding trends. Collaborated across support, product, and risk teams to improve merchant readiness and reduce downstream onboarding bottlenecks through clearer, data-informed partner communication.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="timeline-rail">
+          <span class="timeline-dot"></span>
+          <span class="timeline-line"></span>
+        </div>
+        <div class="job-card">
+          <button class="job-head">
+            <div class="job-head-text">
+              <span class="job-title">Client Solutions Architect</span>
+              <span class="job-co">JPMorgan Chase &amp; Co.</span>
+            </div>
+            <span class="job-date">Sep 2021 – Aug 2023</span>
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="job-body">
+            <p>Brought CX and Zendesk expertise into the RevOps team to address merchant and partner pain points related to KYC, risk, and API issues. Built dashboards in Looker and maintained data workflows in Sheets and BigQuery to surface and resolve common issues. Developed an in-depth Integrations Training SOP in Confluence, which became a core resource across onboarding, implementation, and support teams.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="timeline-rail">
+          <span class="timeline-dot"></span>
+          <span class="timeline-line"></span>
+        </div>
+        <div class="job-card">
+          <button class="job-head">
+            <div class="job-head-text">
+              <span class="job-title">Account Specialist</span>
+              <span class="job-co">JPMorgan Chase &amp; Co.</span>
+            </div>
+            <span class="job-date">Oct 2020 – Sep 2021</span>
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="job-body">
+            <p>Providence, Rhode Island.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="timeline-rail">
+          <span class="timeline-dot"></span>
+          <span class="timeline-line timeline-line-end"></span>
+        </div>
+        <div class="job-card">
+          <button class="job-head">
+            <div class="job-head-text">
+              <span class="job-title">Customer Support Specialist</span>
+              <span class="job-co">JPMorgan Chase &amp; Co.</span>
+            </div>
+            <span class="job-date">Aug 2019 – Sep 2020</span>
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="job-body">
+            <p>Provided frontline support for merchant account issues, including payments, reconciliations, KYC, fraud, and disbursements, using Zendesk email and chat channels. Later focused on improving internal support operations — revamped the Customer Delight Confluence homepage, implemented analytics via Zendesk Explore and Jira, and introduced feedback loops that drove documentation clarity and support efficiency. Successfully recovered high-value merchant funds lost to fraud through in-depth investigation and resolution efforts.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="edu-block">
+      <h3 class="edu-title">Education</h3>
+      <div class="edu-row">
+        <div class="edu-item">
+          <span class="edu-degree">B.A., Spanish Language and Literature</span>
+          <span class="edu-school">Rhode Island College</span>
+        </div>
+        <div class="edu-item">
+          <span class="edu-degree">B.A., English Language and Literature</span>
+          <span class="edu-school">Rhode Island College</span>
+        </div>
+      </div>
+      <p class="edu-honor">Phi Sigma Iota honor society</p>
+    </div>
+  </section>
+
+  <!-- SKILLS PANEL -->
+  <section class="panel" id="panel-skills" data-panel="skills">
+    <h2 class="panel-title">Skills</h2>
+    <p class="panel-sub">Tap a category to see what's inside.</p>
+
+    <div class="skills-grid" id="skillsGrid">
+
+      <div class="skill-card" data-color="lavender">
+        <div class="skill-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        </div>
+        <h3>Business operations</h3>
+        <p>Process improvement, workflow design, cross-functional coordination, RevOps</p>
+      </div>
+
+      <div class="skill-card" data-color="mint">
+        <div class="skill-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+        </div>
+        <h3>Documentation</h3>
+        <p>SOPs, Confluence systems, training docs, knowledge bases built for clarity</p>
+      </div>
+
+      <div class="skill-card" data-color="blush">
+        <div class="skill-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3>Customer support</h3>
+        <p>Zendesk, frontline escalations, fraud investigation, customer delight programs</p>
+      </div>
+
+      <div class="skill-card" data-color="sky">
+        <div class="skill-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M18.7 8l-5.1 5.1-2.8-2.8L7 14.1"/></svg>
+        </div>
+        <h3>Data &amp; analytics</h3>
+        <p>SQL, BigQuery, Looker, Google Data Analytics certified, dashboard building</p>
+      </div>
+
+      <div class="skill-card" data-color="amber">
+        <div class="skill-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Technical fluency</h3>
+        <p>HTML, CSS &amp; JavaScript certified, API troubleshooting, Postman, SQL queries</p>
+      </div>
+
+      <div class="skill-card" data-color="lavender">
+        <div class="skill-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l6 6 6-6M5 16l6-6 6 6" transform="rotate(0)"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <h3>Languages</h3>
+        <p>English — native &amp; bilingual. Spanish — professional working proficiency.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERESTS PANEL -->
+  <section class="panel" id="panel-interests" data-panel="interests">
+    <h2 class="panel-title">Beyond work</h2>
+    <p class="panel-sub">The other side of the desk.</p>
+
+    <div class="interests-grid">
+      <div class="interest-pill"><span class="interest-emoji-cat" aria-hidden="true"></span>Cat mom to a Seal-Point Siamese</div>
+      <div class="interest-pill">Specialty latte enthusiast</div>
+      <div class="interest-pill">Brain teasers &amp; puzzles</div>
+      <div class="interest-pill">Strategy games</div>
+      <div class="interest-pill">Video games</div>
+      <div class="interest-pill">Psychological horror fan</div>
+      <div class="interest-pill">Art &amp; creative projects</div>
+      <div class="interest-pill">Pilates</div>
+      <div class="interest-pill">Fitness &amp; wellness</div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Thanks for stopping by — let's connect on <a href="#" id="linkedinLink">LinkedIn</a>.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
